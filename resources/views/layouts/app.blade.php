@@ -19,9 +19,11 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
 <body>
-    <div id="app">
+    <div id="app" ng-app="adminApp">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -83,5 +85,12 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="{{ url('/js/core/underscore-min.js') }}"></script>
+    <script src="{{ url('/js/core/BaseClass.js') }}"></script>
+    <script src="{{ url('/js/core/component.js') }}"></script>
+    <script src="{{ url('/js/core/Service.js') }}"></script>
+    <script src="{{ url('/js/core/Filter.js') }}"></script>
+    <script src="{{ url('/js/core/TestController.js') }}"></script>
+
 </body>
 </html>

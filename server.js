@@ -6,7 +6,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var redis = require('redis');
 
-server.listen(6379);
+server.listen(8089);
 io.on('connection', function (socket) {
 
     console.log("new client connected");
